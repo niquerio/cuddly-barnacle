@@ -1,36 +1,9 @@
 <!doctype html>
 <html>
   <head>
-    <title>Getting Started</title>
+    <title>Cuddly Barnacle</title>
   </head>
   <body>
-	  <h1>MidiPlayerJS</h1>
-	  <p>MidiPlayerJS is a javascript library which triggers events in sequence with a given MIDI file.  This MIDI player was built using <a href="https://github.com/grimmdude/MidiPlayerJS">MidiPlayerJS</a> to read the file, and <a href="https://github.com/danigb/soundfont-player">soundfont-player</a> to load and play the sounds.</p>
-	  <h4>Choose a Midi File</h4>
-	  <p id="select-file">
-	  	<input type="file" onchange="loadFile()" onclick="Player.stop()" />
-	  </p>
-	  <p id="loading">Loading soundfont...</p>
-	  <div style="border:1px solid #ccc;margin-bottom:12px;background:#f7f7f7;">
-	  	<div id="play-bar" style="height:20px;background:#33C3F0;width:0%;"></div>
-	  </div>
-	  <p>
-	  	<button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();" disabled="disabled">Play</button>
-	  	<button class="button" onclick="stop()">Stop</button>
-	  </p>
-	  <!--
-	  <h4>Tempo</h4>
-	  <p>
-	  	<input id="test" type="range" min="50" max="200" value="100" onchange="changeTempo(this.value)" style="width:200px;" />
-	  </p>-->
-	  <hr />
-	  <p>
-	  	Tempo: <span id="tempo-display"></span> bpm<br />
-	  	<input type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">
-	  	<br />
-	  	MIDI File Format: <span id="file-format-display"></span>
-	  </p>
-	  <div id="events" class="well"></div>
     <script src="./bundle.js"></script>
   </body>
 </html>
