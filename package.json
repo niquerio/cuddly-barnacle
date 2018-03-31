@@ -1,7 +1,8 @@
 {
   "name": "cuddly-barnacle",
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "setupFiles": ["./src/setup_jest.js"]
   },
   "version": "1.0.0",
   "description": "",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/niquerio/cuddly-barnacle#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "jest": "^22.4.3",

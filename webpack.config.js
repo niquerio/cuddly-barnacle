@@ -10,7 +10,8 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    port: '9000'
   },
   module: {
     rules: [
@@ -29,11 +30,11 @@ module.exports = {
        }
     ]
   },
- plugins: [
-      new webpack.ProvidePlugin({
-          $: "jquery",
-          jquery: "jQuery",
-          "windows.jQuery": "jquery"
-      }),
+  plugins: [
+       new webpack.ProvidePlugin({
+           $: "jquery",
+           jquery: "jQuery",
+           "windows.jQuery": "jquery"
+       }),
   ],
 };

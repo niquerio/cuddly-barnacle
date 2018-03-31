@@ -1,6 +1,9 @@
-require('../index');
+require('../tunamidi');
+
 
 test('adds tunamidi div to given div', () => {
 	document.body.innerHTML= '<div id="midi"></div>';
-  expect($('#midi').tunamidi()).toContainHtml('<div class="tunamidi"></div>')	
+  var tunamidi =  $('#midi').tunamidi();
+  expect(tunamidi.children().length).toEqual(1)	
+  expect(tunamidi.children().first().attr('class')).toEqual('tunamidi')	
 });
